@@ -20,6 +20,8 @@
 .hero_text h1 {
   font-size: var(--font68);
   font-family: var(--titleFamily);
+  line-height: 9.5rem;
+  border-bottom: 3px solid var(--textColor);
 }
 
 .hero_text p {

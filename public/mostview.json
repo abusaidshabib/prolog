@@ -61,7 +61,7 @@
     "Description":"Elixir is a functional, concurrent programming language that was designed to be used for building scalable and maintainable applications. It was created by José Valim in 2011 and is built on top of the Erlang virtual machine (VM), which is known for its robustness, fault tolerance, and ability to handle large numbers of concurrent connections.One of the key features of Elixir is its use of the actor model for concurrency, which allows it to easily scale and handle high levels of traffic. It also includes support for pattern matching, immutable data structures, and first-class functions, which make it easy to write clean, concise, and expressive code. Elixir also has a built-in macro system that allows developers to create domain-specific languages (DSLs) and abstractions, which can make it easier to write code that is tailored to specific domains or problem sets.In addition to its core language features, Elixir has a growing developer community and is supported by a wide range of libraries, frameworks, and tools. It is often used for building distributed systems, real-time applications, and web applications, and is known for its scalability, concurrency, and fault tolerance.",
     "date": "15-Sep-2014",
     "author": "Shelley Derrington",
-    "img": "https://unsplash.com/photos/2EmxXaD0we4"
+    "img": "https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
   },
   {
     "id": 9,

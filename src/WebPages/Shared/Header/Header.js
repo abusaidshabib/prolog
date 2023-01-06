@@ -3,6 +3,7 @@ import React from 'react';
 import './Header.css';
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { BiChevronDown } from 'react-icons/bi';
+import { BsSearch } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -34,11 +35,12 @@ const Header = () => {
           <li>Technology<BiChevronDown/></li>
           <li>Programming<BiChevronDown /></li>
           <li>Contact</li>
+          <li>
+            <BsSearch />
+          </li>
         </ul>
-
         <Link className='btn_normal'>My account</Link>
       </div>
-
 
     </div>
   );

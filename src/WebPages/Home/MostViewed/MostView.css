@@ -1,3 +1,8 @@
+.m_div1{
+  padding: var(--tbGaps);
+  padding: var(--bothGaps);
+}
+
 #main_div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -7,7 +12,11 @@
   height: 80vh;
 }
 
-
+.title_text{
+  font-size: var(--font68);
+  line-height: 0;
+  font-family: var(--titleFamily);
+}
 
 .child div {
   display: grid;
@@ -18,7 +27,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.child p{
+.child p {
   font-size: var(--font32);
   font-weight: 500;
   text-transform: capitalize;
@@ -26,8 +35,17 @@
   background-color: var(--bgColor);
 }
 
-.child:nth-child(odd) {
-  background-color: aquamarine;
+.read_more {
+  text-decoration: none;
+  color: var(--hoverColor);
+  font-size: var(--font16);
+  display: grid;
+  justify-content: center;
+}
+
+.read_more:hover {
+  color: var(--textColor);
+  text-decoration: underline;
 }
 
 .child:nth-child(1) {

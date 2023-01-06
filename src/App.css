@@ -60,6 +60,7 @@
   /* padding and margin */
   --bothGaps: 0 10rem;
   --btnGaps: .8rem 1.6rem;
+  --tbGaps: 3rem 0;
 }
 
 .App {

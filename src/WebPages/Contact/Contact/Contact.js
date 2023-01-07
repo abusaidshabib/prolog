@@ -1,9 +1,11 @@
 import React from 'react';
+import FirstContact from '../FirstContact/FirstContact';
+import './Contact.css';
 
 const Contact = () => {
   return (
-    <div>
-      
+    <div className='paddingBoth'>
+      <FirstContact></FirstContact>
     </div>
   );
 };

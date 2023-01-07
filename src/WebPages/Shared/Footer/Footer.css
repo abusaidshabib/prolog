@@ -1,6 +1,7 @@
 .footer_div {
-  padding: var(--bothGaps);
+  padding: 10rem;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(4, 1fr);
   line-height: 2.5rem;
 }

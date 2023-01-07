@@ -31,12 +31,37 @@ const Header = () => {
       <div className='main_nav'>
         <p className='logo'>Pro<span>log<b>.</b></span></p>
         <ul>
-          <li>Home</li>
-          <li>Technology<BiChevronDown/></li>
-          <li>Programming<BiChevronDown /></li>
-          <li>Contact</li>
           <li>
-            <BsSearch />
+            <Link className='menu_flex' to="/home">Home</Link>
+          </li>
+          <li className='dropdown' id='tech'>
+            <Link className='menu_flex' >Technology<BiChevronDown /></Link>
+            <div className='dropdown_menu' id="tech_menu">
+              <Link className='sub_menu'>New Updates</Link><br />
+              <Link className='sub_menu'>Artificial Intelligence</Link><br />
+              <Link className='sub_menu'>BioTech</Link><br />
+              <Link className='sub_menu'>Nano Technology</Link><br />
+            </div>
+          </li>
+          <li className='dropdown' id='prog'>
+            <Link className='menu_flex'>Programming<BiChevronDown /></Link>
+            <div className='dropdown_menu' id='prog_menu'>
+              <Link className='sub_menu'>New Programs</Link><br />
+              <Link className='sub_menu'>JavaScript tips</Link><br />
+              <Link className='sub_menu'>Computer Programming</Link><br />
+              <Link className='sub_menu'>Assembly Languages</Link><br />
+            </div>
+          </li>
+          <li>
+            <Link className='menu_flex' to="/contact">Contact</Link>
+          </li>
+          <li className='dropdown' id='search'>
+            <Link className='menu_flex'><BsSearch /></Link>
+            <div className='search_field' id="search_f">
+              <div className=''>
+                <input type="" name="" /><Link className='search_btn'>Search</Link>
+              </div>
+            </div>
           </li>
         </ul>
         <Link className='btn_normal'>My account</Link>

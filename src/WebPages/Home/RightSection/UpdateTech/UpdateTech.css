@@ -5,9 +5,9 @@
 .up_div h1 {
   font-family: var(--titleFamily);
   font-size: 2.2rem;
-  line-height: 1rem;
   padding: 32px 0;
   border-bottom: 2px solid var(--textColor);
+  letter-spacing: .3rem;
 }
 
 .up_tech {

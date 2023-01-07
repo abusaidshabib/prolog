@@ -1,9 +1,10 @@
 .footer_div {
-  padding: 10rem;
+  padding: 5rem 10rem;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
   line-height: 2.5rem;
+  border-top: 2px solid var(--textColor);
 }
 
 .sub_div {
@@ -89,7 +90,6 @@
 .footer_icons ul li{
   display: flex;
   align-items: center;
-  line-height: 0;
 }
 
 .footer_icons ul li p {

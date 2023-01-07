@@ -21,7 +21,6 @@
 
 .social_icon_div a:hover {
   color: var(--hoverColor);
-  line-height: 0;
 }
 
 
@@ -190,22 +189,7 @@
   color: var(--hoverColor);
 }
 
-/* #tech:hover .dropdown_menu{
-  display: block;
-} */
 
-/* .dropdown_menu{
-  display: none;
+@media screen and (max-width: 1280px) {
+
 }
-
-.dropdown_menu ul {
-  list-style-type: none;
-}
-
-.dropdown_menu ul li {
-  color: var(--textColor);
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  font-size: var(--fontMenu);
-  font-weight: 500;
-} */

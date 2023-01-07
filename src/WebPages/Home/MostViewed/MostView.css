@@ -14,7 +14,6 @@
 
 .title_text{
   font-size: var(--font68);
-  line-height: 0;
   font-family: var(--titleFamily);
 }
 

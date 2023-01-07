@@ -23,21 +23,39 @@ const Footer = () => {
       {/* footer_div2 */}
       <div className='content_center'>
         <ul>
-          <li>Home</li>
-          <li>Technology</li>
-          <li>Programming</li>
-          <li>About</li>
+          <li>
+            <Link className='menu_flex' to='/home'>Home</Link>
+            </li>
+          <li>
+            <Link className='menu_flex' to='/technology'>Technology</Link>
+            </li>
+          <li>
+            <Link className='menu_flex' to='/programming'>Programming</Link>
+          </li>
+          <li>
+            <Link className="menu_flex" to='/contact'>Contact</Link>
+          </li>
         </ul>
       </div>
 
       {/* footer_div3 */}
       <div className='content_center'>
         <ul>
-          <li>Programming</li>
-          <li>New Technology</li>
-          <li>Operating Systems</li>
-          <li>Mobile Roms</li>
-          <li>Science Improvement</li>
+          <li>
+            <Link className='menu_flex' to='/programming'>Programming</Link>
+          </li>
+          <li>
+            <Link to='/technology' className='sub_menu'>Nano Technology</Link>
+          </li>
+          <li>
+            <Link to='/technology' className='sub_menu'>New Updates</Link>
+          </li>
+          <li>
+            <Link to='/technology' className='sub_menu'>New Technology</Link>
+          </li>
+          <li>
+            <Link to='/programming' className='sub_menu'>JavaScript Tips</Link>
+          </li>
         </ul>
       </div>
 

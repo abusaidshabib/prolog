@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './FirstContact.css';
 
 const FirstContact = () => {
@@ -8,7 +9,7 @@ const FirstContact = () => {
       <div className='first_contact'>
         <p className=''>The purpose of a blog contact page is to provide a way for readers to get in touch with the blog owner or organization, whether for feedback, questions, or to pitch ideas for articles. It is an important element of any blog, as it allows readers to easily communicate with the blog owner and helps to build trust and credibility. A well-designed blog contact page should be easy to find and use, and should include clear and concise instructions on how to get in touch. It should also include any relevant contact details, such as an email address or social media profiles, and should provide multiple ways for readers to reach out, such as through a contact form, email, or social media. Additionally, it is important to regularly check and respond to any messages or inquiries received through the contact page to ensure that readers receive timely and helpful responses.</p>
 
-        <div>
+        <div className='form_field'>
           <label>
             <p>Enter Your Name</p>
             <input className='input_field' type="" name="" id="" />
@@ -19,8 +20,9 @@ const FirstContact = () => {
           </label>
           <label>
             <p>Enter Your Message</p>
-            <input className='input_field' type="" name="" id="" />
+            <textarea className='input_field' type="" name="" id="" />
           </label>
+          <Link className='btn_outline width_full'>Submit to us</Link>
         </div>
       </div>
     </div>

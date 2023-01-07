@@ -8,6 +8,9 @@
 
 .large_div img {
   width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 30rem;
 }
 
 .small_div {
@@ -27,7 +30,6 @@
 .small_title {
   font-size: var(--font16);
   font-weight: 500;
-  line-height: 0;
 }
 
 .small_para{

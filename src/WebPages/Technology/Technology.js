@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import UpdateTech from '../RightSection/UpdateTech/UpdateTech';
-import './NewTech.css';
+import UpdateTech from '../Home/RightSection/UpdateTech/UpdateTech';
 
-const NewTech = () => {
+const Technology = () => {
 
   const [datas, setData] = useState([]);
 
@@ -19,20 +18,20 @@ const NewTech = () => {
         <div className='div_grid'>
           <div>
             {
-              datas.slice(0, 1).map(data => <div className='large_div'>
+              datas.slice(0, 3).map(data => <div className='large_div'>
                 <img src={data.img} alt="" />
                 <p className='small_title'>{data.title}</p>
-                <p className='small_para'>{data.Description.slice(0, 335)}</p>
+                <p className='small_para'>{data.Description.slice(0, 200)}</p>
               </div>)
             }
           </div>
           <div>
             {
-              datas.slice(1, 5).map(data => <div className='small_div'>
+              datas.slice(3, 12).map(data => <div className='small_div'>
                 <img className='small_img' src={data.img} alt="" />
                 <div>
                   <p className='small_title'>{data.title}</p>
-                  <p className='small_para'>{data.Description.slice(0,45)}...</p>
+                  <p className='small_para'>{data.Description.slice(0,35)}...</p>
                 </div>
               </div>)
             }
@@ -46,4 +45,4 @@ const NewTech = () => {
   );
 };
 
-export default NewTech;
+export default Technology;

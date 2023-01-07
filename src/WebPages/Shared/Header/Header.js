@@ -29,27 +29,27 @@ const Header = () => {
 
       {/* Main Nav */}
       <div className='main_nav'>
-        <p className='logo'>Pro<span>log<b>.</b></span></p>
+        <Link className='menu_flex' to="/"><p className='logo'>Pro<span>log<b>.</b></span></p></Link>
         <ul>
           <li>
             <Link className='menu_flex' to="/home">Home</Link>
           </li>
           <li className='dropdown' id='tech'>
-            <Link className='menu_flex' >Technology<BiChevronDown /></Link>
+            <Link className='menu_flex' to='/technology'>Technology<BiChevronDown /></Link>
             <div className='dropdown_menu' id="tech_menu">
-              <Link className='sub_menu'>New Updates</Link><br />
-              <Link className='sub_menu'>Artificial Intelligence</Link><br />
-              <Link className='sub_menu'>BioTech</Link><br />
-              <Link className='sub_menu'>Nano Technology</Link><br />
+              <Link to='/technology' className='sub_menu'>New Updates</Link><br />
+              <Link to='/technology' className='sub_menu'>Artificial Intelligence</Link><br />
+              <Link to='/technology' className='sub_menu'>BioTech</Link><br />
+              <Link to='/technology' className='sub_menu'>Nano Technology</Link><br />
             </div>
           </li>
           <li className='dropdown' id='prog'>
-            <Link className='menu_flex'>Programming<BiChevronDown /></Link>
+            <Link className='menu_flex' to='/programming'>Programming<BiChevronDown /></Link>
             <div className='dropdown_menu' id='prog_menu'>
-              <Link className='sub_menu'>New Programs</Link><br />
-              <Link className='sub_menu'>JavaScript tips</Link><br />
-              <Link className='sub_menu'>Computer Programming</Link><br />
-              <Link className='sub_menu'>Assembly Languages</Link><br />
+              <Link to='/programming' className='sub_menu'>New Programs</Link><br />
+              <Link to='/programming' className='sub_menu'>JavaScript tips</Link><br />
+              <Link to='/programming' className='sub_menu'>Computer Programming</Link><br />
+              <Link to='/programming' className='sub_menu'>Assembly Languages</Link><br />
             </div>
           </li>
           <li>

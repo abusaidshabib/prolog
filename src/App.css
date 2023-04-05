@@ -1,38 +1,134 @@
+:root {
+  /* --bgExColor: #3B185F;
+  --textColor: #F0CAA3;
+  --hoverColor: #C060A1;
+  --bgColor: #00005C; */
+
+  /* --bgExColor: #570A57;
+  --textColor: #F806CC;
+  --hoverColor: #A91079;
+  --bgColor: #2E0249; */
+
+  /* --bgExColor: #2D4263;
+  --textColor: #ECDBBA;
+  --hoverColor: #C84B31;
+  --bgColor: #191919; */
+
+  /* --bgExColor: #04293A;
+  --textColor: #ECB365;
+  --hoverColor: #0076ad;
+  --bgColor: #041C32; */
+
+  /* --bgExColor: #2C394B;
+  --textColor: #FF4C29;
+  --hoverColor: #334756;
+  --bgColor: #082032; */
+
+  /* --bgExColor: #30475E;
+  --textColor: #DDDDDD;
+  --hoverColor: #F05454;
+  --bgColor: #222831; */
+
+  /* --bgExColor: #FF6363;
+  --textColor: #202040;
+  --hoverColor: #543864;
+  --bgColor: #FFBD69; */
+
+  --bgExColor: #C2DED1;
+  --textColor: #354259;
+  --hoverColor: #F37748;
+  --bgColor: #ECE5C7;
+
+  /*F05454  good, best, dark, better 1, 3, 4, 2*/
+
+
+  /* font_family */
+  --titleFamily: 'Belleza', sans-serif;
+  --regularFamily: 'Source Sans Pro',sans-serif;
+
+  /* font_size */
+  --fontMenu: 1.4rem;
+  --font12: 1.2rem;
+  --font16: 1.6rem;
+  --font22: 2.2rem;
+  --font32: 3.2rem;
+  --font68: 6.8rem;
+  --btnSize: 1.4rem;
+
+  /* line height */
+
+  --f22height: 3rem;
+
+  /* padding and margin */
+  --bothGaps: 0 10rem;
+  --btnGaps: .8rem 1.6rem;
+  --tbGaps: 3rem 0;
+}
+
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bgColor);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
+  font-family: var(--regularFamily);
+  color: var(--textColor);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* 
+font-family: 'Belleza',
+sans-serif; */
+
+.margin_both {
+  margin: 0 10rem;
+}
+@media screen and (min-width: 200px) {
+  html{
+    font-size: 30%;
+  }
+  
+}
+
+@media screen and (min-width: 428px) {
+  html{
+    font-size: 35%;
+  }
+  
+}
+
+@media screen and (min-width: 601px) {
+  html{
+    font-size: 45%;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  html{
+    font-size: 50%;
+  }
+  
+}
+
+@media screen and (min-width: 1366px) {
+  html{
+    font-size: 58%;
+  }
+  
+}
+
+@media screen and (min-width: 1440px) {
+  html{
+    font-size: 60%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 1600px) {
+  html{
+    font-size: 70%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }

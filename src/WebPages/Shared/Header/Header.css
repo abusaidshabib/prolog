@@ -1,0 +1,277 @@
+.nav_div {
+  position: relative;
+}
+
+.position_fixed {
+  position: fixed;
+}
+
+.top_nav_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bgExColor);
+  color: var(--textColor);
+  padding: var(--bothGaps);
+}
+
+.top_nav_div p {
+  font-size: 1.4rem;
+  line-height: 0;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.social_icon_div a {
+  color: var(--textColor);
+  font-size: 1.2rem;
+  margin-left: .5rem;
+}
+
+.social_icon_div a:hover {
+  color: var(--hoverColor);
+}
+
+
+
+/* main nav */
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--bothGaps);
+  min-height: 8vh;
+  height: 8vh;
+}
+
+.logo {
+  font-size: 2.4rem;
+  line-height: 0;
+  font-weight: 500;
+  letter-spacing: .1rem;
+  color: var(--textColor);
+}
+
+.logo span {
+  font-weight: 700;
+  color: var(--hoverColor);
+}
+
+.logo span b {
+  font-size: 4rem;
+}
+
+.main_nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.main_nav ul li {
+  margin-left: 2.5rem;
+  color: var(--textColor);
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-size: var(--fontMenu);
+  font-weight: 500;
+}
+
+.main_nav ul li:hover {
+  color: var(--hoverColor);
+}
+
+.btn_normal {
+  text-decoration: none;
+  font-size: var(--btnSize);
+  text-transform: uppercase;
+  color: var(--bgColor);
+  background-color: var(--textColor);
+  padding: var(--btnGaps);
+  font-weight: 500;
+  letter-spacing: .1rem;
+}
+
+.btn_normal:hover {
+  background-color: var(--hoverColor);
+}
+
+.btn_outline {
+  text-decoration: none;
+  font-size: var(--btnSize);
+  text-transform: uppercase;
+  color: var(--textColor);
+  font-weight: 500;
+  letter-spacing: .1rem;
+  border: .1rem solid var(--textColor);
+  padding: var(--btnGaps);
+}
+
+.btn_outline:hover {
+  border: .1rem solid var(--hoverColor);
+  background-color: var(--hoverColor);
+  color: var(--darkBgColor);
+}
+
+/* drop down menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+#tech:hover #tech_menu {
+  display: grid;
+}
+
+#prog:hover #prog_menu {
+  display: grid;
+}
+
+.dropdown_menu {
+  padding-top: 3rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: var(--bgColor);
+  width: 30rem;
+  z-index: 1;
+}
+
+.dropdown_menu .sub_menu:hover {
+  color: var(--hoverColor);
+}
+
+.sub_menu {
+  text-decoration: none;
+  line-height: 3rem;
+  width: 100%;
+  color: var(--textColor);
+}
+
+
+
+.menu_flex {
+  color: var(--textColor);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu_flex_active{
+  color: var(--hoverColor);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu_flex:hover {
+  color: var(--hoverColor);
+}
+
+.menu_bar {
+  display: none;
+  color: var(--textColor);
+}
+
+.full_menu {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgColor);
+  overflow: hidden;
+}
+
+
+.full_menu.active {
+  display: grid;
+}
+
+.full_menu ul {
+  list-style-type: none;
+  display: grid;
+  justify-items: center;
+  font-size: 2.2rem;
+  line-height: 3.6rem;
+  color: var(--textColor);
+  text-align: center;
+}
+
+.full_menu ul li:hover {
+  color: var(--hoverColor);
+}
+
+.full_menu div {
+  width: 100%;
+}
+
+.menu_img_size {
+  width: 100%;
+}
+
+.close_btn {
+  width: 100%;
+  background-color: var(--textColor);
+  color: var(--bgColor);
+  height: 100%;
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  display: grid;
+  align-items: center;
+}
+
+.close_btn:hover {
+  background-color: var(--hoverColor);
+}
+
+.list_btn_menu{
+  text-decoration: none;
+  color: var(--hoverColor);
+}
+
+.list_btn_menu:hover{
+  color: var(--textColor);
+}
+
+@media screen and (max-width: 400px) {
+  .top_nav_div{
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 601px) {
+  .top_nav_div{
+    padding: 0 1rem;
+  }
+  .main_nav{
+    margin: 0 1rem;
+  }
+  
+}
+
+@media screen and (max-width: 1280px) {
+  .main_nav ul {
+    display: none;
+  }
+
+  .my_account {
+    display: none;
+  }
+
+  .menu_bar {
+    display: block;
+    font-size: 24px;
+    fill: var(--textColor);
+  }
+
+  .menu_bar:hover {
+    fill: var(--hoverColor);
+  }
+}
+
+

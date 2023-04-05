@@ -1,0 +1,108 @@
+.footer_div {
+  padding: 5rem 10rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  line-height: 2.5rem;
+  border-top: 2px solid var(--textColor);
+}
+
+.sub_div {
+  display: flex;
+  align-items: center;
+}
+
+.sub_btn {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: var(--btnSize);
+  text-transform: uppercase;
+  color: var(--bgColor);
+  background-color: var(--textColor);
+  width: 40%;
+  height: 4.2rem;
+  font-weight: 500;
+  letter-spacing: .1rem;
+}
+
+.sub_btn:hover{
+  background-color: var(--hoverColor);
+}
+
+.footer_input {
+  background-color: var(--bgExColor);
+  outline: none;
+  border: none;
+  height: 4rem;
+  width: 60%;
+  color: var(--textColor);
+}
+
+.footer_input::placeholder{
+  font-size: var(--btnSize);
+  padding-left: 2rem;
+  color: var(--textColor);
+}
+
+.footer_input:focus{
+  font-size: var(--btnSize);
+  color: var(--textColor);
+}
+
+.footer_div ul {
+  list-style-type: none;
+}
+
+.footer_check{
+  margin-left: -2px;
+}
+
+.sub_div label{
+  font-size: var(--font12);
+  letter-spacing: .1rem;
+  color: var(--textColor);
+}
+
+.footer_div li {
+  color: var(--textColor);
+  font-size: var(--fontMenu);
+  font-weight: 500;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+}
+
+.footer_div li:hover {
+  color: var(--hoverColor);
+}
+
+.content_center {
+  display: grid;
+  justify-content: center;
+}
+
+.footer_icons {
+  display: grid;
+  justify-content: end;
+}
+
+.footer_icons ul li{
+  display: flex;
+  align-items: center;
+}
+
+.footer_icons ul li p {
+  margin-left: 1.5rem;
+  line-height: 0;
+}
+
+.footer_icons ul li:hover a {
+  color: var(--hoverColor);
+}
+
+.footer_div li a {
+  text-decoration: none;
+  color: var(--textColor);
+  font-size: var(--font16);
+}

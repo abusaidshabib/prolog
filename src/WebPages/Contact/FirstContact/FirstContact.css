@@ -1,0 +1,28 @@
+.first_contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+
+.first_contact p {
+  font-size: var(--font22);
+  color: var(--textColor);
+}
+
+.input_field{
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 2px solid var(--textColor);
+  color: var(--textColor);
+  font-size: var(--font22);
+  margin-bottom: 5rem;
+}
+
+.input_field:focus{
+  outline: none;
+}
+
+.form_field{
+  width: 100%;
+}

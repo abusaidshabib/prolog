@@ -1,0 +1,28 @@
+.error_div {
+  background-color: var(--bgColor);
+  height: 100vh;
+  max-height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+.etitleror {
+  line-height: 0;
+  font-size: 28rem;
+}
+
+.error_para_nm {
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width: 640px) {
+
+  .etitleror {
+    font-size: 10rem;
+  }
+  .error_para_nm{
+    font-size: 1.8rem;
+  }
+}
